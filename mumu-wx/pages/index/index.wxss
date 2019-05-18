@@ -1,0 +1,9 @@
+/**index.wxss**/
+.banner-img {
+  width: 750rpx;
+  height: 292rpx;
+}
+.menu-img {
+  width: 100%;
+  height: 200rpx;
+}

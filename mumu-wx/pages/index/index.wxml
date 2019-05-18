@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="banner-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FmHEMyCF2itTd23DQuaf3KhEQuoR.JPG!large.jpg"/>
+  <van-row>
+    <van-col span="12" bindtap="bindViewTap" data-alias="teo1ww9z">
+      <image class="menu-img" src="./../../static/images/img1.png"/>
+    </van-col>
+    <van-col span="12" bindtap="bindViewTap" data-alias="w7w5kzfi1">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/Fp0FwTU8ZizQVviplXSLiFv2_lgS.png!large.png"/>
+    </van-col>
+  </van-row>
+  <van-row>
+    <van-col span="12" bindtap="bindViewTap" data-alias="6yvmiwax">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FqEIEyfJ2KwkN7i455OfeSsCc3qs.png!large.png"/>
+    </van-col>
+    <van-col span="12" bindtap="bindViewTap" data-alias="xmohx2ra">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FnwrXIQNisHTVVSoo_vGRg_1KS-l.png!large.png"/>
+    </van-col>
+  </van-row>
+  <van-row>
+    <van-col span="12" bindtap="bindViewTap" data-alias="xymphwfa">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FpWjt-qYc6ko_XS1Kq15xDk5mHTh.png!large.png"/>
+    </van-col>
+    <van-col span="12" bindtap="bindViewTap" data-alias="hj3kjvf61">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FimhmJluZl1daX7zGdIninomI4aE.png!large.png"/>
+    </van-col>
+  </van-row>
+  <van-row>
+    <van-col span="12" bindtap="bindViewTap" data-alias="inrjk11i1">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FrN5DI2FteBvzOt8njruCPOzKaBO.png!large.png"/>
+    </van-col>
+    <van-col span="12" bindtap="bindViewTap" data-alias="l3nwsp7p">
+      <image class="menu-img" src="https://img.yzcdn.cn/upload_files/2018/08/04/FnCmPkdJevabGng3bwFGiXzYmqv0.png!large.png"/>
+    </van-col>
+  </van-row>
+</view>

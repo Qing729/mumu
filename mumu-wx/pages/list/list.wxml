@@ -1,0 +1,28 @@
+<!--pages/list/list.wxml-->
+<scroll-view
+  scroll-y
+  class='scroll-wrapper'
+>
+  <view class='goods-list'>
+    <view class='left'>
+      <view class='item-box' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{(index+1)%2!=0}}">
+        <cover-image class="item-img" src="{{item.image_url}}"/>
+        <view class='item-title'>{{item.title}}</view>
+        <view class='item-price'>
+          <text>￥{{item.price}}</text>
+          <van-tag color="#ff4444" plain>购买</van-tag>
+        </view>
+      </view>
+    </view>
+    <view class='right'>
+      <view class='item-box' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{(index+1)%2==0}}">
+        <cover-image class="item-img" src="{{item.image_url}}"/>
+        <view class='item-title'>{{item.title}}</view>
+        <view class='item-price'>
+          <text>￥{{item.price}}</text>
+          <van-tag color="#ff4444" plain>购买</van-tag>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

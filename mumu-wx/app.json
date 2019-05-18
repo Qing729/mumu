@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/all-goods/all-goods",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "木木喝水",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-row": "miniprogram_npm/vant-weapp/row/index",
+    "van-col": "miniprogram_npm/vant-weapp/col/index",
+    "van-tag": "miniprogram_npm/vant-weapp/tag/index"
+  },
+  "tabBar": {
+    "selectedColor": "#285eb6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/all-goods/all-goods",
+        "text": "全部商品"
+      }
+    ]
+  }
+}
