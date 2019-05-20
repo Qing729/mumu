@@ -1,1 +1,23 @@
 /* pages/detail/detail.wxss */
+.detail-wrapper {
+  background-color: #f4f4f4;
+  font-size: 24rpx;
+}
+.goods-msg {
+  background-color: #fff;
+}
+.title {
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+.price {
+  color: #ff4444;
+  padding: 0 20rpx 20rpx;
+}
+.goods-img {
+  padding: 30rpx;
+}
+image {
+  width: 100%;
+  height: auto;
+}

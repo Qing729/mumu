@@ -5,14 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
+    info: {}
+  },
 
+  /**
+   * 事件处理函数
+   */
+  getDetail: function (alias) {
+    var url = 'https://shop15193902.youzan.com/wscshop/goods/goodsByTagAlias.json';
+    var params = {
+      pageSize: 20,
+      page: this.data.page,
+      offlineId: 0,
+      order: '',
+      alias: alias,
+      kdt_id: 15001734
+    }
+    request(url, params, 'get').then(res => {
+      wx.stopPullDownRefresh();
+      if (res.code == 0 && res.data.list) {
+        this.setData({
+          list: this.data.list.concat(res.data.list)
+        });
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(JSON.parse(options.info));
+    this.setData({
+      info: JSON.parse(options.info)
+    })
   },
 
   /**

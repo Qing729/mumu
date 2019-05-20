@@ -5,8 +5,8 @@
 >
   <view class='goods-list'>
     <view class='left'>
-      <view class='item-box' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{(index+1)%2!=0}}">
-        <cover-image class="item-img" src="{{item.image_url}}"/>
+      <view class='item-box' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{(index+1)%2!=0}}" data-info="{{item}}" bindtap='goDetail'>
+        <image class="item-img" src="{{item.image_url}}" lazy-load="true" mode="widthFix"/>
         <view class='item-title'>{{item.title}}</view>
         <view class='item-price'>
           <text>￥{{item.price}}</text>
@@ -15,8 +15,8 @@
       </view>
     </view>
     <view class='right'>
-      <view class='item-box' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{(index+1)%2==0}}">
-        <cover-image class="item-img" src="{{item.image_url}}"/>
+      <view class='item-box' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{(index+1)%2==0}}" data-info="{{item}}" bindtap='goDetail'>
+        <image class="item-img" src="{{item.image_url}}" lazy-load="true" mode="widthFix"/>
         <view class='item-title'>{{item.title}}</view>
         <view class='item-price'>
           <text>￥{{item.price}}</text>

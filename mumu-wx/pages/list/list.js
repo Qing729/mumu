@@ -33,14 +33,17 @@ Page({
       }
     })
   },
+  goDetail: function (e) {
+    wx.navigateTo({
+      url: '../detail/detail?info=' + JSON.stringify(e.currentTarget.dataset.info)
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      alias: options.alias
-    });
+    this.data.alias = options.alias;
     wx.startPullDownRefresh();
     this.getList(options.alias);
   },
@@ -77,6 +80,8 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    this.data.page = 1;
+    this.data.list = [];
     this.getList(this.data.alias);
   },
 

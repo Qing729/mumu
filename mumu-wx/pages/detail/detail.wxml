@@ -1,2 +1,11 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class='detail-wrapper'>
+  <view class='goods-msg'>
+    <image src="{{info.image_url}}" lazy-load="true" mode="widthFix"/>
+    <view class='title'>{{info.title}}</view>
+    <view class='price'>￥{{info.price}}</view>
+  </view>
+  <view class='goods-img'>
+    <image wx:for="{{info.picture}}" src="{{item.url}}" lazy-load="true" mode="widthFix"/>
+  </view>
+</view>
