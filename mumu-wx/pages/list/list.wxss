@@ -1,4 +1,37 @@
 /* pages/list/list.wxss */
+.top {
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 60rpx;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.top .top-text {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 28rpx;
+}
+.top .top-text::before {
+  position: absolute;
+  display: block;
+  width: 32rpx;
+  height: 2rpx;
+  top: 44rpx;
+  background-color: #e5e5e5;
+  content: '';
+  left: -60rpx;
+}
+.top .top-text::after {
+  position: absolute;
+  display: block;
+  width: 32rpx;
+  height: 2rpx;
+  top: 44rpx;
+  background-color: #e5e5e5;
+  content: '';
+  right: -60rpx;
+}
 .scroll-wrapper {
   background-color: #f4f4f4;
   font-size: 24rpx;

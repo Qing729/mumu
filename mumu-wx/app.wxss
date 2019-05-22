@@ -1,2 +1,4 @@
 /**app.wxss**/
-
+page {
+  font-size: 24rpx;
+}

@@ -1,5 +1,6 @@
 // pages/all-goods/all-goods.js
 import { request } from '../../utils/request.js'
+import Notify from '../../miniprogram_npm/vant-weapp/notify/notify';
 Page({
 
   /**
@@ -25,10 +26,13 @@ Page({
     }
     request(url, params, 'get').then(res => {
       wx.stopPullDownRefresh();
-      if (res.code == 0 && res.data.list) {
+      if (res.data.list && res.data.list.length > 0) {
         this.setData({
           list: this.data.list.concat(res.data.list)
         });
+        this.data.page++;
+      } else {
+        Notify('没有更多了');
       }
     })
   },
@@ -43,7 +47,6 @@ Page({
    */
   onLoad: function (options) {
     wx.startPullDownRefresh();
-    this.getList();
   },
 
   /**
@@ -87,7 +90,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    this.data.page ++;
     this.getList();
   },
 

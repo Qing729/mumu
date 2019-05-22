@@ -6,6 +6,6 @@
     <view class='price'>￥{{info.price}}</view>
   </view>
   <view class='goods-img'>
-    <image wx:for="{{info.picture}}" src="{{item.url}}" lazy-load="true" mode="widthFix"/>
+    <image wx:for="{{info.picture}}" wx:key="{{index}}" src="{{item.url}}" lazy-load="true" mode="widthFix"/>
   </view>
 </view>

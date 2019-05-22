@@ -1,4 +1,14 @@
 <!--pages/list/list.wxml-->
+<view class='top'>
+  <view class='top-text'>
+    衣服区
+  </view>
+</view>
+<!-- <van-row class='nav-filter'>
+  <van-col span="8">综合</van-col>
+  <van-col span="8">价格</van-col>
+  <van-col span="8">上新</van-col>
+</van-row> -->
 <scroll-view
   scroll-y
   class='scroll-wrapper'
@@ -26,3 +36,4 @@
     </view>
   </view>
 </scroll-view>
+<van-notify id="van-notify" />
